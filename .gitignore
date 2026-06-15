@@ -9,6 +9,15 @@ __pycache__/
 *.log
 .DS_Store
 staticfiles/
-temp_auto_push.bat
 temp_interactive_push.bat
 .gitignore
+
+# Local environments and generated files
+venv/
+env/
+project_venv/
+node_modules/
+*.pyc
+.env.*
+!.env.example
+!.env.sample

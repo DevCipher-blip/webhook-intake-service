@@ -1,6 +1,10 @@
-# AI Webhook Ingestion and Normalization Platform
+# Webhook normalization pipeline
 
-Production-grade webhook ingestion platform built with Django, DRF, PostgreSQL, Redis, Celery, and OpenAI.
+## Trace an event beyond the HTTP response
+
+The project's core is the transition from an incoming provider event to a normalized internal representation and entity update. The existing architecture and event-taxonomy sections below explain those boundaries.
+
+An engineering demonstration should include duplicate delivery, an invalid signature, an out-of-order event, and a failed downstream update. Keep provider payload examples synthetic. An n8n workflow that exercises retry/idempotency behavior would be a useful portfolio extension once it is implemented and verified; the current repository should not imply that such a workflow is already included.
 
 ## Architecture
 
